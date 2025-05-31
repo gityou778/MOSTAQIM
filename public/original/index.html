@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مُسْتَقْسِم</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🕌 مُسْتَقْسِم - أداتك الإسلامية الذكية</h1>
+    <button onclick="toggleLanguage()">🌐 تغيير اللغة</button>
+  </header>
+
+  <main>
+    <section id="prayer-times">
+      <h2>🕋 مواعيد الصلاة</h2>
+      <select id="city-select">
+        <option value="Cairo">القاهرة</option>
+        <option value="Alexandria">الإسكندرية</option>
+        <option value="Arish">العريش</option>
+      </select>
+      <ul id="times-list"></ul>
+    </section>
+
+    <section id="task-manager">
+      <h2>📝 مهامي</h2>
+      <input type="text" id="task-input" placeholder="أدخل مهمة...">
+      <button onclick="addTask()">➕ أضف مهمة</button>
+      <button onclick="startVoiceTask()">🎙️ سجّل مهمة صوتيًا</button>
+      <ul id="task-list"></ul>
+    </section>
+
+    <section id="azkar">
+      <h2>🌄 الأذكار</h2>
+      <button onclick="showAzkar('morning')">أذكار الصباح</button>
+      <button onclick="showAzkar('evening')">أذكار المساء</button>
+      <button onclick="showAzkar('afterPrayer')">ما بعد الصلاة</button>
+      <ul id="azkar-list"></ul>
+    </section>
+
+    <section id="bot-chat">
+      <h2>🤖 المُجيب الذكي</h2>
+      <div id="chat-box"></div>
+      <input type="text" id="user-input" placeholder="اسألني سؤالًا دينيًا...">
+      <button onclick="sendMessage()">📤 إرسال</button>
+    </section>
+
+    <section id="virtues">
+      <h2>📿 فضل العشر الأوائل من ذي الحجة</h2>
+      <p>
+        قال النبي ﷺ: "ما من أيام العمل الصالح فيها أحب إلى الله من هذه الأيام"، يعني العشر الأوائل من ذي الحجة.
+        <br>
+        يُستحب فيها: الصيام، الذكر، الدعاء، الصدقة، وقراءة القرآن.
+      </p>
+      <a href="https://youtu.be/asO1fFdGtDU?si=BfKgZ381cDMvDKCH" target="_blank">📺 مشاهدة الفيديو</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 مُسْتَقْسِم - Islamic Productivity Tool</p>
+  </footer>
+</body>
+</html>

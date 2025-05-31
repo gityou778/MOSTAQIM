@@ -1,0 +1,6 @@
+body { font-family: 'Cairo', sans-serif; direction: rtl; background: #f0f0f0; padding: 1rem; color: #333; }
+header, footer { background: #004643; color: white; padding: 1rem; text-align: center; }
+main { max-width: 800px; margin: auto; background: white; padding: 1rem; border-radius: 10px; }
+section { margin-bottom: 2rem; }
+input, select, button { margin: 0.5rem 0; padding: 0.5rem; font-size: 1rem; }
+ul { list-style: none; padding: 0; }
